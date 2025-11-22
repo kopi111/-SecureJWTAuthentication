@@ -1,33 +1,42 @@
-# Secure JWT Authentication
+# Secure JWT Authentication Implementation
 
-A professional implementation of JSON Web Token (JWT) authentication for secure web applications.
+Comprehensive JWT authentication system with BCrypt password hashing and token management.
 
 ## Features
-- JWT token generation and validation
-- Secure password hashing with BCrypt
-- Token refresh mechanism
-- Role-based access control (RBAC)
-- Session management
-- Middleware integration
+- **JWT Token Generation**: Secure token creation
+- **Token Validation**: Signature verification
+- **BCrypt Hashing**: Secure password storage
+- **Token Refresh**: Automatic token renewal
+- **Role-Based Access Control**: Permission management
+- **Session Management**: User session tracking
+- **Middleware Integration**: ASP.NET Core pipeline
 
 ## Technology Stack
 - C# / .NET
-- JWT (JSON Web Tokens)
-- BCrypt for password hashing
 - ASP.NET Core
+- JWT (JSON Web Tokens)
+- BCrypt.Net for password hashing
+- Python (token generation utilities)
 
 ## Security Features
-- Secure token generation with cryptographic signing
+- Cryptographic token signing
+- Secure secret key management
 - Token expiration handling
-- Refresh token support
 - HTTPS enforcement
-- Protection against common attacks (XSS, CSRF)
+- Protection against XSS, CSRF
+
+## Architecture
+- Clean separation of concerns
+- Dependency injection
+- Middleware-based authentication
+- Role/claim-based authorization
 
 ## Use Cases
-- Web API authentication
-- Microservices security
-- Single Sign-On (SSO) systems
+- Web API security
+- Microservices authentication
+- Single Sign-On (SSO)
 - Mobile app backends
+- SPA applications
 
 ## License
 MIT License
